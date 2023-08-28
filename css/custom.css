@@ -1,0 +1,27 @@
+
+.image-container {
+   /* display: flex; Use flexbox to center the image */
+   /* justify-content: center; Horizontally center the image */
+   /*  align-items: center; Vertically center the image */
+   display: grid; /* Use CSS grid to center the image */
+   place-items: center; /* Center the image both horizontally and vertically */
+
+    width: 100%; /* Set the width of the container */
+    height: 0; /* Set the initial height to 0 to maintain aspect ratio */
+    padding-bottom: 40%; /* Set the padding-bottom to match the width for a 1:1 aspect ratio */
+    
+    position: relative; /* Set the container to a relative position for absolute positioning of the image */
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .image-container img {
+    position: absolute; /* Position the image absolutely within the container */
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto; /* Center the image using margin:auto */
+  max-width: 100%; /* Set the maximum width of the image to fill the container */
+  max-height: 100%; /* Set the maximum height of the image to fill the container */
+  object-fit: contain; /* Scale the image while maintaining aspect ratio */
+  }
