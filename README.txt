@@ -1,56 +1,13 @@
+小孩一步一步地開始踏上青少年階段，我確信加入學校家長
 
-TITLE: 
-Church - 100% Fully Responsive Free HTML5 Bootstrap Template
+教師會，會更了解子女的校園生活，了解學校各方面的資訊及
 
-AUTHOR:
-DESIGNED & DEVELOPED by FreeHTML5.co
+方向，認識有共同理念的家裡，為學校盡一份綿力，使學生多
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
+一份歸屬感，令子女健康愉快地成長。
 
+教育學生並非全都落在學校教師的頭上，家長身教及參與都
 
-CREDITS:
+非常重要，家校合作的基礎是良好有效活動平台，加強家長對
 
-Bootstrap
-http://getbootstrap.com/
-
-jQuery
-http://jquery.com/
-
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
-
-Modernizr
-http://modernizr.com/
-
-Google Fonts
-https://www.google.com/fonts/
-
-Icomoon
-https://icomoon.io/app/
-
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
-
-Flexslider
-http://flexslider.woothemes.com/
-
-jQuery countTo
-http://www.owlcarousel.owlgraphic.com/
-
-Magnific Popup
-http://dimsemenov.com/plugins/magnific-popup/
-
-Demo Images:
-http://unsplash.com
-
+學校的了解及信心。 
