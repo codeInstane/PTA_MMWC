@@ -112,24 +112,36 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-nav .top-menu {
     padding: 28px 1em;
+    background-color: lightblue;
   }
 }
+
 .fh5co-nav #fh5co-logo {
-  font-size: 45px;
+  color: lightblue;
+  font-size: 20px;
   margin: 0;
   padding: 1em 0;
   font-family: "Libre Baskerville", serif;
   display: block;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  background-color: lightblue;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.09); 
+  font-size: 45px;
+  */
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav #fh5co-logo {
+    color: lightblue;
     border-bottom: none;
     padding: .1em 0;
+    background-color: lightblue;
   }
 }
+
+
+
 .fh5co-nav #fh5co-logo a {
-  color: #658361;
+  /* color: #658361; */
+  color: lightblue;
 }
 .fh5co-nav a {
   padding: 5px 10px;
