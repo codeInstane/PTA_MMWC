@@ -26,3 +26,12 @@
   max-height: 100%; /* Set the maximum height of the image to fill the container */
   object-fit: contain; /* Scale the image while maintaining aspect ratio */
   }
+
+  ul {
+    list-style-type: none;
+  }
+  
+ul li a {
+    font-size: large;
+    color: blue;
+}
