@@ -48,10 +48,8 @@
 	<link rel="stylesheet" href="css/custom.css">
 
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/modal-login.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/modal-login.css">
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -127,7 +125,8 @@
 					   				<div class="slider-text-inner">
 					   					<h1>認識家長教師會</h1>
 											<!-- <h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2> -->
-											<p><a class="btn btn-primary btn-demo popup-vimeo" > <i class="icon-play4"></i> 睇片</a> <a class="btn btn-primary btn-learn">加入義工行列! <i class="icon-arrow-right3"></i></a></p>
+											<p><a class="btn btn-primary btn-demo popup-vimeo" > <i class="icon-play4"></i> 睇片</a> 
+												<a class="btn btn-primary btn-learn">加入義工行列! <i class="icon-arrow-right3"></i></a></p>
 					   				</div>
 				   				</div>
 				   			</div>
@@ -369,16 +368,46 @@
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
 					<div class="sermon-entry">
-						<div class="sermon" style="background-image: url(images/IMG_20230603_101109.jpg);">
-							<div class="play">
-								<!-- <a class="btn btn-primary btn-demo popup-vimeo" href="videos/VID_20230603_112703.mp4"> <i class="icon-play4"></i>睇片</a> -->
-								<a class="popup-vimeo" href="video/VID_20230603_112703.mp4"><i class="icon-play3"></i></a>							
+						<div class="sermon" style="background-image: url(images/IMG_20230603_101109.jpg); "  >
+							
+							<!-- <a class="btn btn-primary btn-demo popup-vimeo" href="videos/VID_20230603_112703.mp4"> <i class="icon-play4"></i>睇片</a> -->
+							<!-- <div  id="video-container" style="display: none;">								
+								<a class="popup-vimeo" href="video/VID_20230603_112703.mp4"></a>							
+							</div> -->	
+								<div class="play-button"><a class="btn btn-primary btn-demo popup-vimeo" onclick="showLoginModal()"> <i class="icon-play3"></i> 睇片</a></div>
+							
+							<div class="video-container" style="display: none;">
+								<!-- Video player code or embed video here -->								
+								<iframe src="video/VID_20230603_112703.mp4" width="640" height="600" frameborder="0" allow="autoplay; " ></iframe>							  
 							</div>
+														
 						</div>
+						<button class="close-button">Close</button>
 						<h3>端午節親子包糉DIY工作坊</h3>
 						<span>2023年6月</span>
 					</div>
 				</div>
+
+	<!-- login Modal for auth to open 活動花絮-->							
+	<div id="login-modal" class="modal">
+		<div class="modal-content">
+			<span class="close" onclick="closeLoginModal()">&times;</span>
+			<h2>Login</h2>
+			<form onsubmit="authenticate(event)">
+			<div class="form-group">
+				<label for="username">Username:</label>
+				<input type="text" id="username" name="username" required>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+			</div>
+			<button type="submit">Login</button>
+			</form>
+		</div>
+		</div>
+
+
 				<div class="col-md-4 text-center animate-box">
 					<div class="sermon-entry">
 						<div class="sermon" style="background-image: url(images/pta_6.jpg);">
@@ -390,149 +419,30 @@
 						<span>2023年4月</span>
 					</div>
 				</div>
+
 				<div class="col-md-4 text-center animate-box">
 					<div class="sermon-entry">
 						<div class="sermon" style="background-image: url(images/pta_7.jpg);">
 							<div class="play">
+								<!-- Video link with login authentication -->
+		<a class="popup-vimeo" href="video/PTA_MMWC_BBQ.mp4"><i class="icon-play3"></i></a>
+
+	</div>
+</div>
+<h3>親子燒烤樂日營</h3>
+<span>2023年3月</span>
+</div>
+</div>
+</div>
+</div>
 								
 								
 								
 			
-								
 
 
-							
-<!-- Modal -->
-<div id="loginModal" class="modal">
-	<div class="modal-content">
-	  <span class="close">&times;</span>
-	  <h2>Login</h2>
-	  <form id="loginForm">
-		<label for="username">Username:</label>
-		<input type="text" id="username" name="username" required>
-		<br>
-		<label for="password">Password:</label>
-		<input type="password" id="password" name="password" required>
-		<br>
-		<input type="submit" value="Login">
-	  </form>
-	</div>
-  </div>
+
   
-  <!-- Video link with login authentication -->
-		<a class="popup-vimeo" href="video/PTA_MMWC_BBQ.mp4"><i class="icon-play3"></i></a>
-
-	<style>
-		/* Styling for the modal */
-		.modal {
-			display: none; /* Hide the modal by default */
-			position: fixed; /* Position the modal */
-			z-index: 1; /* Set the stacking order */
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			overflow: auto; /* Enable scrolling if needed */
-			background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
-		}
-		
-		.modal-content {
-			background-color: #fefefe;
-			margin: 15% auto; /* 15% from the top and centered */
-			padding: 20px;
-			border: 1px solid #888;
-			width: 80%; /* Adjust the width as needed */
-		}
-		
-		.close {
-			color: #aaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
-		
-		.close:hover,
-		.close:focus {
-			color: black;
-			text-decoration: none;
-			cursor: pointer;
-		}
-		</style>
-
-<script>
-	// Get the modal element
-	var modal = document.getElementById("loginModal");
-  
-	// Get the close button
-	var closeBtn = document.getElementsByClassName("close")[0];
-  
-	// Get the login form element
-	var loginForm = document.getElementById("loginForm");
-  
-	// Add event listener to open the modal when the video link is clicked
-	document.querySelector(".popup-vimeo").addEventListener("click", function (event) {
-	  event.preventDefault(); // Prevent the default behavior of the link
-  
-	  // Show the modal
-	  modal.style.display = "block";
-	});
-  
-	// Add event listener to close the modal when the close button is clicked
-	closeBtn.addEventListener("click", function () {
-	  modal.style.display = "none";
-	});
-  
-	// Add event listener to close the modal when the user clicks outside the modal
-	window.addEventListener("click", function (event) {
-	  if (event.target == modal) {
-		modal.style.display = "none";
-	  }
-	});
-  
-	// Add event listener to handle the login form submission
-	loginForm.addEventListener("submit", function (event) {
-	  event.preventDefault(); // Prevent the form from submitting
-  
-	  // Perform the login authentication here
-	  var username = document.getElementById("username").value;
-	  var password = document.getElementById("password").value;
-  
-	  // Example authentication logic (replace with your own)
-	  if (username === "admin" && password === "password") {
-		// Login successful, play the video
-		modal.style.display = "none"; // Hide the modal
-		var videoLink = document.querySelector(".popup-vimeo");
-		var videoUrl = videoLink.getAttribute("href");
-		window.location.href = videoUrl; // Redirect to the video URL
-	  } else {
-		// Login failed, show the modal again
-		alert("Invalid username or password. Please try again.");
-	  }
-	});
-  </script>
-
-
-
-
-
-							</div>
-						</div>
-						<h3>親子燒烤樂日營</h3>
-						<span>2023年3月</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -623,11 +533,18 @@
 	<script src="js/magnific-popup-options.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
 	<!-- Main -->
 	<script src="js/main.js"></script>
 
 	<!-- include footer -->
 	<script src="js/footer.js"></script>
+
+	<!-- login Modal -->
+	<script src="js/modal-login.js"></script>
 
 	</body>
 </html>
