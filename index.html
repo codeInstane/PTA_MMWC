@@ -392,17 +392,17 @@
 	<div id="login-modal" class="modal">
 		<div class="modal-content">
 			<span class="close" onclick="closeLoginModal()">&times;</span>
-			<h2>Login</h2>
+			<h2>登入</h2>
 			<form onsubmit="authenticate(event)">
 			<div class="form-group">
-				<label for="username">Username:</label>
+				<label for="username">登入名稱:</label>
 				<input type="text" id="username" name="username" required>
 			</div>
 			<div class="form-group">
-				<label for="password">Password:</label>
+				<label for="password">密碼:</label>
 				<input type="password" id="password" name="password" required>
 			</div>
-			<button type="submit">Login</button>
+			<button type="submit">確定</button>
 			</form>
 		</div>
 		</div>
@@ -411,10 +411,21 @@
 				<div class="col-md-4 text-center animate-box">
 					<div class="sermon-entry">
 						<div class="sermon" style="background-image: url(images/pta_6.jpg);">
-							<div class="play">								
+
+							<div class="play-button"><a class="btn btn-primary btn-demo popup-vimeo" onclick="showLoginModal()"> <i class="icon-play3"></i> 睇片</a></div>
+
+							<!-- <div class="play">								
 								<a class="popup-vimeo" href="video/Kinball.mp4"><i class="icon-play3"></i></a>
+							</div> -->
+
+							<div class="video-container" style="display: none;">
+								<!-- Video player code or embed video here -->								
+								<iframe src="video/Kinball.mp4" width="640" height="600" frameborder="0" allow="autoplay; " ></iframe>							  
 							</div>
+
+
 						</div>
+						<button class="close-button">Close</button>
 						<h3>親子體驗「健球（kinball）運動」</h3>
 						<span>2023年4月</span>
 					</div>
@@ -423,18 +434,25 @@
 				<div class="col-md-4 text-center animate-box">
 					<div class="sermon-entry">
 						<div class="sermon" style="background-image: url(images/pta_7.jpg);">
-							<div class="play">
-								<!-- Video link with login authentication -->
-		<a class="popup-vimeo" href="video/PTA_MMWC_BBQ.mp4"><i class="icon-play3"></i></a>
+
+							<div class="play-button"><a class="btn btn-primary btn-demo popup-vimeo" onclick="showLoginModal()"> <i class="icon-play3"></i> 睇片</a></div>
+
+							<div class="video-container" style="display: none;">
+								<!-- Video player code or embed video here -->								
+								<iframe src="video/PTA_MMWC_BBQ.mp4" width="640" height="600" frameborder="0" allow="autoplay; " ></iframe>							  
+							</div>
+							<!-- <div class="play">								
+		<a class="popup-vimeo" href="video/PTA_MMWC_BBQ.mp4"><i class="icon-play3"></i></a> -->
 
 	</div>
 </div>
+<button class="close-button">Close</button>
 <h3>親子燒烤樂日營</h3>
 <span>2023年3月</span>
 </div>
 </div>
-</div>
-</div>
+<!-- </div>
+</div> -->
 								
 								
 								

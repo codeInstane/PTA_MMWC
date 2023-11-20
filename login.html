@@ -1,0 +1,64 @@
+     
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+
+<link rel="stylesheet" href="css/login.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="submit" value="Log in">
+    </form>
+  </div>
+
+  <script>
+    // Function to handle the login form submission
+    function handleLogin(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get the username and password from the form
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Make a fetch request to fetch the JSON data
+      fetch("users.json") // Replace "users.json" with your server-side endpoint
+        .then(function(response) {
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error("Failed to fetch user data. Please try again.");
+          }
+        })
+        .then(function(users) {
+          // Perform authentication logic (check if username and password match)
+          console.log(users);        
+
+          if (username === users.username && password === users.password) {
+               // Store authentication token or session information
+               localStorage.setItem("authToken", "H5J65GFK564H5;4J(*&($&87L4FH45GFJ4DF5HER87Y5M4VC5$&%D4H878YTI4X5$&15415ZD4H878YTI4X5H4F54JZDH78K7ST");
+
+            // Redirect to protected content or another page
+            window.location.href = "index.html";
+          } else {
+            alert("Authentication failed. Please try again.");
+          }
+        })
+        .catch(function(error) {
+          console.error(error);
+          alert("Failed to fetch user data. Please try again.");
+        });
+    }
+
+    // Attach event listener to the login form
+    document.getElementById("login-form").addEventListener("submit", handleLogin);
+  </script>
+</body>
+</html>
