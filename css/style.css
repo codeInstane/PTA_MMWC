@@ -124,8 +124,8 @@ h1, h2, h3, h4, h5, h6, figure {
   font-family: "Libre Baskerville", serif;
   display: block;
   background-color: lightblue;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.09); 
-  font-size: 45px;
+ border-bottom: 1px solid rgba(0, 0, 0, 0.09); 
+  /*  font-size: 45px;
   */
 }
 @media screen and (max-width: 768px) {
